@@ -9,12 +9,14 @@ import Testimonials from "./components/Testimonials";
 import ContactSection from "./components/ContactPage";
 import TextPressure from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className="w-full min-h-screen text-white bg-black ">
       {/* <Loader /> */}
+      <CustomCursor />
       <NavBar />
       <LandingPage />
       <Marque />
