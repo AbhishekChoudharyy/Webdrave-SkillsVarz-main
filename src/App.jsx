@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom"; // Import Routes and Route
 import Loader from "./components/Loader";
 import NavBar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
-import Marque from "./components/Marque";
 import ServicesSection from "./components/Service";
 import Projects from "./components/Projects";
-import AboutUs from "./components/About";
-import WhyChooseWebdrave from "./components/WhyChooseWebdrave";
-import Testimonials from "./components/Testimonials";
 import ContactSection from "./components/ContactPage";
-import TextPressure from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 import CustomCursor from "./components/customcursor";
 
@@ -37,26 +33,12 @@ function App() {
         <>
           <CustomCursor />
           <NavBar />
-          <LandingPage />
-          <Marque />
-          <ServicesSection />
-          <Projects />
-          <AboutUs />
-          <WhyChooseWebdrave />
-          <Testimonials />
-          <ContactSection />
-          <TextPressure
-            text="WEBDRAVE"
-            flex={true}
-            alpha={false}
-            stroke={false}
-            width={true}
-            weight={true}
-            italic={true}
-            textColor="#ffffff"
-            strokeColor="#ff0000"
-            minFontSize={36}
-          />
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/services" element={<ServicesSection />} />
+            <Route path="/works" element={<Projects />} />
+            <Route path="/contact" element={<ContactSection />} />
+          </Routes>
         </>
       )}
     </div>

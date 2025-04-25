@@ -5,9 +5,9 @@ import Logo from "./Logo";
 const NavBar = () => {
   const navigations = [
     { name: "HOME", to: "/" },
-    { name: "SERVICES", to: "#portfolio" },
-    { name: "WORKS", to: "/team" }, 
-    { name: "CONTACT US ", to: "#contact" },
+    { name: "SERVICES", to: "/services" },
+    { name: "WORKS", to: "/works" },
+    { name: "CONTACT US", to: "/contact" },
   ];
 
   return (
@@ -16,9 +16,7 @@ const NavBar = () => {
       <ul className="font-spacelight flex justify-center items-center space-x-16 mx-12 max-sm:mx-2 max-sm:space-x-4">
         {navigations.map(({ name, to }) => (
           <Link
-            className={`text-xs max-sm:text-[10px] text-[#dbdbdb] hover:text-white transition-colors ${
-              name === "Home" ? "text-primary" : ""
-            }`}
+            className="text-xs max-sm:text-[10px] text-[#dbdbdb] hover:text-white transition-colors"
             to={to}
             key={name}
           >
