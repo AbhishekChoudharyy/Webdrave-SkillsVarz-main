@@ -58,8 +58,8 @@ const CustomCursor = () => {
     document.addEventListener("click", handleClick);
 
     gsap.ticker.add(() => {
-      pos.current.x += (mouse.current.x - pos.current.x) * 0.07;
-      pos.current.y += (mouse.current.y - pos.current.y) * 0.07;
+      pos.current.x += (mouse.current.x - pos.current.x) - 15;
+      pos.current.y += (mouse.current.y - pos.current.y) - 15;
 
       gsap.set(trailRef.current, {
         x: pos.current.x,
@@ -100,12 +100,12 @@ const CustomCursor = () => {
 
   return (
     <>
-      <img
+      {/* <img
         ref={cursorRef}
         src="./cursor.webp"
         alt="cursor"
         className={`pointer-events-none fixed z-[9999] -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ease-out ${cursorStyle[variant]}`}
-      />
+      /> */}
       <div
         ref={trailRef}
         className={`pointer-events-none fixed z-[9998] -translate-x-1/2 -translate-y-1/2 rounded-full ring-2 transition-all duration-300 ease-out ${trailStyle[variant]}`}

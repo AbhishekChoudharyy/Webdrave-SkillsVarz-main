@@ -1,34 +1,31 @@
-// src/components/Loader.jsx
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const Loader = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const loaderRef = useRef();
+  const textRef = useRef();
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2500);
-    return () => clearTimeout(timer);
+    const tl = gsap.timeline();
+
+    tl.from(loaderRef.current, {
+      opacity: 0,
+      scale: 3,
+      duration: 0.8,
+      ease: "power3.out",
+    })
+    tl.to(loaderRef.current, {
+      opacity: 0,
+      duration: 0.6,
+      delay: 1,
+      ease: "power2.inOut",
+    });
   }, []);
 
   return (
-    <AnimatePresence>
-      {isLoading && (
-        <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black text-white"
-          initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 1 } }}
-        >
-          <motion.h1
-            className="text-4xl font-bold tracking-widest"
-            initial={{ y: 0 }}
-            animate={{ y: [0, -10, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-          >
-            WebDrave
-          </motion.h1>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <div className="fixed inset-0 bg-black flex flex-col items-center justify-center animate-pulse z-100" ref={loaderRef}>
+      <img src="/img/logo.svg"/> 
+    </div>
   );
 };
 
