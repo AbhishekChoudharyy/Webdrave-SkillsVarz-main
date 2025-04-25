@@ -17,7 +17,7 @@ const Landingpage = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="public\videos\bg video.webm" type="video/mp4" />
+          <source src="videos/bg video.webm" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

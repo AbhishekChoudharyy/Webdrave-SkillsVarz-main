@@ -8,25 +8,25 @@ const WhyChooseWebdraveDark = () => {
       id: 1,
       number: '1.',
       text: 'Pricing based on client budget.',
-      image: 'public/img/wcu1.png'
+      image: 'img/wcu1.png'
     },
     {
       id: 2,
       number: '2.',
       text: 'Transparent and Timely Delivery',
-      image: 'public/img/wcu2.png'
+      image: 'img/wcu2.png'
     },
     {
       id: 3,
       number: '3.',
       text: 'High Focus On Creativity and User Experience',
-      image: 'public/img/wcu3.png'
+      image: '/wcu3.png'
     },
     {
       id: 4,
       number: '4.',
       text: 'Strong Client Communication & Support',
-      image: 'public/img/wcu4.png'
+      image: 'img/wcu4.png'
     }
   ];
 

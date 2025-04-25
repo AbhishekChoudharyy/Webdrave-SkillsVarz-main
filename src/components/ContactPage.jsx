@@ -65,7 +65,7 @@ const ContactSection = () => {
               </button>
       </div>
       <Magnet padding={50} disabled={false} magnetStrength={15}>
-      <div><img class='hover:scale-[105%] transition-all duration-200' src="public\img\contact.png" alt="" srcset="" /></div></Magnet>
+      <div><img class='hover:scale-[105%] transition-all duration-200' src="img/contact.png" alt="" srcset="" /></div></Magnet>
       </div>
      
     </section>

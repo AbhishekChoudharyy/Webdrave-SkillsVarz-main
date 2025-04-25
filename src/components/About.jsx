@@ -59,7 +59,7 @@ function StorySection() {
           transition={{ duration: 0.7 }}
           className="relative h-[40vw] rounded-lg overflow-hidden shadow-xl"
         >
-          <img src="public\img\About.png" alt="Our agency team" className="w-full h-full hover:scale-[105%] transition-all duration-300" />
+          <img src="img/About.png" alt="Our agency team" className="w-full h-full hover:scale-[105%] transition-all duration-300" />
         </motion.div>
         </Magnet>
       </div>
