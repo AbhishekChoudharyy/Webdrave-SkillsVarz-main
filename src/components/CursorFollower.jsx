@@ -1,11 +1,35 @@
 // src/components/Cursor.jsx
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const Cursor = () => {
   const cursorRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Check if the device is mobile
+    const checkIsMobile = () => {
+      setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+    };
+
+    // Run the check on load and on resize
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      // Hide the cursor on mobile devices
+      if (cursorRef.current) {
+        cursorRef.current.style.display = "none";
+      }
+      return; // Exit early for mobile devices
+    }
+
     const cursor = cursorRef.current;
 
     const moveCursor = (e) => {
@@ -52,7 +76,7 @@ const Cursor = () => {
         el.removeEventListener("mouseleave", removeHoverEffect);
       });
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <div
