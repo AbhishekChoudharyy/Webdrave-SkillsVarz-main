@@ -4,21 +4,21 @@
 
 @font-face {
   font-family: 'space-bold';
-  src: url('public/Font/SpaceGrotesk-Bold.woff2') format('woff2');
+  src: url('Font/SpaceGrotesk-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'space-light';
-  src: url('public/Font/SpaceGrotesk-Light.woff2') format('woff2');
+  src: url('Font/SpaceGrotesk-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'space-regular';
-  src: url('public/Font/SpaceGrotesk-Regular.woff2') format('woff2');
+  src: url('Font/SpaceGrotesk-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
