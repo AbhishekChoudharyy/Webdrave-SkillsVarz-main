@@ -35,23 +35,23 @@ const ServicesSection = () => {
     <section data-scroll data-scroll-section
       data-scroll-speed="-0.1" className="bg-black text-white py-10 w-full">
 
-      {/* First Row */}
-      <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-between gap-6 px-4 md:px-12 lg:px-20 mb-10 w-full">
-        {/* Right side - text block */}
-        <div className="flex-shrink-0 w-full lg:w-[500px] h-[317px] pr-5 lg:ml-5 flex items-start justify-end text-right">
-          <div>
-            <p className="text-sm font-spacebold uppercase tracking-wide text-heading">1. What We Offer</p>
-            <h2 className="text-4xl font-spacelight mt-2 leading-snug">
-              <span className="text-purple font-spacelight">WebDrave</span> delivers <br />
-              <span className="text-purple font-spacelight">creative</span>, custom-built <br />
-              digital <span className="text-purple font-spacelight">services</span> designed<br />
-              to grow your <span className="text-purple font-spacelight">business</span><br />
-              and <span className="text-purple font-spacelight">elevate</span> your brand.
-            </h2>
+       {/* First Row */}
+        <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-between gap-6 px-4 md:px-12 lg:px-20 mb-10 w-full">
+          {/* Right side - text block */}
+          <div className="flex-shrink-0 w-full lg:w-[500px] h-[300px] pr-5 lg:ml-5 flex items-start justify-start text-left">
+            <div>
+          <p className="text-sm sm:text-sm font-spacebold uppercase tracking-wide text-heading">1. What We Offer</p>
+          <h2 className="text-3xl sm:text-4xl font-spacelight mt-2 leading-snug">
+            <span className="text-purple font-spacelight">WebDrave</span> delivers <br />
+            <span className="text-purple font-spacelight">creative</span>, custom-built <br />
+            digital <span className="text-purple font-spacelight">services</span> designed<br />
+            to grow your <span className="text-purple font-spacelight">business</span><br />
+            and <span className="text-purple font-spacelight">elevate</span> your brand.
+          </h2>
+            </div>
           </div>
-        </div>
 
-        {/* Left side - First 2 boxes */}
+          {/* Left side - First 2 boxes */}
         <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-6 lg:gap-12">
           {services.slice(0, 2).map((svc, i) => (
             <div

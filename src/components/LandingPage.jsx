@@ -31,31 +31,23 @@ const Landingpage = () => {
           CREATIVE <span class='text-purple'>MINDS</span>. POWERFUL <span class='text-purple'>CODE</span>. WELCOME TO <span class='text-purple'>WEBDRAVE</span>.
         </h1>
         <div className="font-spaceregular flex flex-wrap gap-4 justify-center">
-          
-        <Magnet padding={50} disabled={false} magnetStrength={10}>
-      <RoundedButton label="Contact" icon={ArrowRight} />
-      </Magnet>
-      
-      <Magnet padding={50} disabled={false} magnetStrength={10}>
-      <RoundedButton label="Explore us" icon={ArrowRight} />
-      </Magnet>
-    </div>
+
+          <Magnet padding={50} disabled={false} magnetStrength={10}>
+            <RoundedButton label="Contact" icon={ArrowRight} />
+          </Magnet>
+
+          <Magnet padding={50} disabled={false} magnetStrength={10}>
+            <RoundedButton label="Explore us" icon={ArrowRight} />
+          </Magnet>
+        </div>
       </div>
-      
-      <div className='absolute bottom-20 left-60 max-sm:top-30 max-sm:left-40'>
+
+      <div className='absolute bottom-40 left-60 max-sm:top-30 max-sm:left-41'>
         <Video />
       </div>
 
       {/* Scroll text circle */}
-      <div className="absolute bottom-8 right-8 z-10 flex flex-col items-center">
-        <CircularText
-          text="SCROLL*DOWN*SCROLL*DOWN*"
-          onHover="speedUp"
-          spinDuration={20}
 
-          className="custom-class "
-        />
-      </div>
     </section>
   );
 };
