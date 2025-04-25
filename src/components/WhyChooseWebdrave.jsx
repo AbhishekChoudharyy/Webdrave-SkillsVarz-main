@@ -20,7 +20,7 @@ const WhyChooseWebdraveDark = () => {
       id: 3,
       number: '3.',
       text: 'High Focus On Creativity and User Experience',
-      image: '/wcu3.png'
+      image: 'img/wcu3.png'
     },
     {
       id: 4,
