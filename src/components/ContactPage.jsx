@@ -17,55 +17,58 @@ const ContactSection = () => {
         </div>
 
       {/* Form */}
-      <div class='w-full flex flex-col md:flex-row items-center justify-between gap-8'>
-      <div className="w-[50%] mx-auto">
-        <div className="mb-12 border-b border-[#8C8C8C] pb-2">
-          <label className="block text-sm sm:text-base md:text-lg uppercase text-[#919191] tracking-wider mb-1">
-            Full Name
-          </label>
-          <input 
-            type="text" 
-            className="w-full bg-transparent text-white outline-none text-lg sm:text-xl"
-          />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="border-b border-[#8C8C8C] pb-2">
+      <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+        <div className="w-full md:w-[50%] mx-auto">
+          <div className="mb-12 border-b border-[#8C8C8C] pb-2">
             <label className="block text-sm sm:text-base md:text-lg uppercase text-[#919191] tracking-wider mb-1">
-              Email
+              Full Name
             </label>
             <input 
-              type="email" 
+              type="text" 
               className="w-full bg-transparent text-white outline-none text-lg sm:text-xl"
             />
           </div>
-          <div className="border-b border-[#8C8C8C] pb-2">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="border-b border-[#8C8C8C] pb-2">
+              <label className="block text-sm sm:text-base md:text-lg uppercase text-[#919191] tracking-wider mb-1">
+                Email
+              </label>
+              <input 
+                type="email" 
+                className="w-full bg-transparent text-white outline-none text-lg sm:text-xl"
+              />
+            </div>
+            <div className="border-b border-[#8C8C8C] pb-2">
+              <label className="block text-sm sm:text-base md:text-lg uppercase text-[#919191] tracking-wider mb-1">
+                Phone
+              </label>
+              <input 
+                type="tel" 
+                className="w-full bg-transparent text-white outline-none text-lg sm:text-xl"
+              />
+            </div>
+          </div>
+
+          <div className="border-b border-[#8C8C8C] pb-2 mb-12">
             <label className="block text-sm sm:text-base md:text-lg uppercase text-[#919191] tracking-wider mb-1">
-              Phone
+              Message
             </label>
-            <input 
-              type="tel" 
-              className="w-full bg-transparent text-white outline-none text-lg sm:text-xl"
+            <textarea
+              rows="2"
+              className="w-full bg-transparent text-white outline-none text-lg sm:text-xl resize-none"
             />
           </div>
-        </div>
 
-        <div className="border-b border-[#8C8C8C] pb-2 mb-12">
-          <label className="block text-sm sm:text-base md:text-lg uppercase text-[#919191] tracking-wider mb-1">
-            Message
-          </label>
-          <textarea
-            rows="2"
-            className="w-full bg-transparent text-white outline-none text-lg sm:text-xl resize-none"
-          />
+          <button className="mt-4 w-fit px-10 py-4 bg-purple hover:shadow-[3px_3px_0_#ffffff] active:scale-[97%] active:shadow-[2px_2px_0_#ffffff] text-white text-md font-spacelight rounded-md transition-shadow duration-300 ">
+            Submit
+          </button>
         </div>
-
-        <button className="mt-4 w-fit px-10 py-4 bg-purple hover:shadow-[3px_3px_0_#ffffff] active:scale-[97%] active:shadow-[2px_2px_0_#ffffff] text-white text-md font-spacelight rounded-md transition-shadow duration-300 ">
-                Submit
-              </button>
-      </div>
-      <Magnet padding={50} disabled={false} magnetStrength={15}>
-      <div><img class='hover:scale-[105%] transition-all duration-200' src="img/contact.png" alt="" srcset="" /></div></Magnet>
+        <Magnet padding={50} disabled={false} magnetStrength={15}>
+          <div className="w-full md:w-auto flex justify-center">
+            <img className="hover:scale-[105%] transition-all duration-200" src="img/contact.png" alt="" />
+          </div>
+        </Magnet>
       </div>
      
     </section>

@@ -213,22 +213,25 @@ const TextPressure = ({
       </div>
 
       {/* Footer Section */}
-      <footer className="relative w-full flex  items-center justify-between px-10 mt-8 font-spacelight uppercase border-t border-gray-300 text-center py-4">
-  <div>
+      <footer className="relative w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-10 mt-8 font-spacelight uppercase border-t border-gray-300 text-center py-6 gap-4 md:gap-0">
+  {/* Left Section */}
+  <div className="w-full md:w-auto">
     <p className="text-sm text-white/70">
       © {new Date().getFullYear()} WebDrave 2025. All rights reserved.
     </p>
   </div>
 
-  <div>
+  {/* Center Section */}
+  <div className="w-full md:w-auto">
     <p className="text-sm text-white/70">
-      <a href="">Instagram</a>&nbsp; | &nbsp;
-      <a href="">Facebook</a>&nbsp;  | &nbsp;
-      <a href="">LinkedIn</a>
+      <a href="#" className="hover:underline">Instagram</a>&nbsp; | &nbsp;
+      <a href="#" className="hover:underline">Facebook</a>&nbsp; | &nbsp;
+      <a href="#" className="hover:underline">LinkedIn</a>
     </p>
   </div>
 
-  <div>
+  {/* Right Section */}
+  <div className="w-full md:w-auto">
     <p className="text-sm text-white/70">
       Made With <span className="text-red-500">❤️</span> by WebDrave
     </p>

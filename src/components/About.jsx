@@ -52,16 +52,20 @@ function StorySection() {
         </motion.div>
         
       <Magnet padding={50} disabled={false} magnetStrength={20}>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="relative h-[40vw] rounded-lg overflow-hidden shadow-xl"
-        >
-          <img src="img/About.png" alt="Our agency team" className="w-full h-full hover:scale-[105%] transition-all duration-300" />
-        </motion.div>
-        </Magnet>
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.7 }}
+    className="relative h-[60vw] md:h-[40vw] rounded-lg overflow-hidden shadow-xl"
+  >
+    <img 
+      src="img/About.png" 
+      alt="Our agency team" 
+      className="w-full h-full object-contain hover:scale-[105%] transition-transform duration-300 rounded-lg" 
+    />
+  </motion.div>
+</Magnet>
       </div>
     </div>
   )
