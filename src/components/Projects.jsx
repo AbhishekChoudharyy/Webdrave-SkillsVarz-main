@@ -13,19 +13,19 @@ const StickyStackedCards = () => {
     },
     {
       tag: "Three.JS",
-      title: "LAND ROVER REDESIGN",
+      title: "Raas Creation",
       description:
-        "A Premium Redesign Concept For Range Rover – Stunning Visuals, Seamless Motion UX/UI, Smooth Transitions, And A Bold High-End Luxury Experience.",
+        "Raas Creation is an ethnic fashion brand website with a powerful admin panel and minimal UI design crafted by WebDrave.",
       image: "img/range rover.png",
-      link: "https://frontend-finesse-reimagine-round2.vercel.app/", // Add the link here
+      link: "https://raascreation.com/", // Add the link here
     },
     {
       tag: "GSAP",
-      title: "ROYAL ENFIELD REDESIGN",
+      title: "Petals Foundation",
       description:
-        "A Rugged Yet Refined Redesign For Royal Enfield – Built To Thrill. A Bold Visual Experience As Powerful As The Ride Itself.",
+        "Petals Foundation is a simple, elegant showcasing website designed by WebDrave to highlight the NGO’s mission and initiatives.",
       image: "img/royal enfield.png",
-      link: "https://dynamic-dev-reimagineround2.vercel.app/", // Add the link here
+      link: "https://petalsfoundation.in/", // Add the link here
     },
   ];
 
