@@ -20,8 +20,8 @@ const services = [
   },
   {
     icon: <FaChartLine className="text-3xl" />,
-    title: 'SEO SOLUTIONS',
-    description: 'We boost your visibility with smart SEO strategies that drive traffic and improve rankings.',
+    title: 'SEO & SMM SOLUTIONS',
+    description: 'We grow your brand through smart SEO strategies and impactful social media campaigns that boost traffic, visibility, and engagement.',
   },
   {
     icon: <FaShoppingCart className="text-3xl" />,
