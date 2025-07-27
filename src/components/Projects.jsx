@@ -16,7 +16,7 @@ const StickyStackedCards = () => {
       title: "Raas Creation",
       description:
         "Raas Creation is an ethnic fashion brand website with a powerful admin panel and minimal UI design crafted by WebDrave.",
-      image: "img/raas.png",
+      image: "img/Raas.png",
       link: "https://raascreation.com/", // Add the link here
     },
     {
@@ -24,7 +24,7 @@ const StickyStackedCards = () => {
       title: "Petals Foundation",
       description:
         "Petals Foundation is a simple, elegant showcasing website designed by WebDrave to highlight the NGO’s mission and initiatives.",
-      image: "img/petals.png",
+      image: "img/Petals.png",
       link: "https://petalsfoundation.in/", // Add the link here
     },
   ];
