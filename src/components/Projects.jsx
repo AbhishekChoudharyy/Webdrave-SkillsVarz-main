@@ -23,9 +23,25 @@ const StickyStackedCards = () => {
       tag: "Showcasing Site",
       title: "Petals Foundation",
       description:
-        "Petals Foundation is a simple, elegant showcasing website designed by WebDrave to highlight the NGO’s mission and initiatives.",
+        "Petals Foundation is a simple, elegant showcasing website designed by WebDrave to highlight the NGO's mission and initiatives.",
       image: "img/Petals.png",
       link: "https://petalsfoundation.in/", // Add the link here
+    },
+    {
+      tag: "Finance CRM / SaaS Website",
+      title: "Navi Mudra",
+      description:
+        "A CRM platform built for financial service providers to manage leads, loan applications, and customer interactions efficiently.",
+      image: "img/nm.png",
+      link: "https://www.navimudra.com/", // Add the link here
+    },
+    {
+      tag: "Travel / Tourism Website",
+      title: "Anaya Escapes",
+      description:
+        "A travel agency curating personalized domestic and international trips designed for comfort, culture, and memorable experiences.",
+      image: "img/ae.png",
+      link: "hhttps://www.anayaescapes.com/", // Add the link here
     },
   ];
 
