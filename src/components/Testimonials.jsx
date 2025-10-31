@@ -41,7 +41,7 @@ const Testimonials = () => {
 {
     id: 5,
     name: "Shikhar",
-    role: "President – Petals Foundation",
+    role: "Founder – Petals Foundation",
     text: "WebDrave built our NGO website from scratch with so much care. Their work helped us reach more people and showcase our initiatives beautifully.",
     bgColor: "bg-white",
     textColor: "text-black",
