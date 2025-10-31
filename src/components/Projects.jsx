@@ -4,7 +4,7 @@ import Magnet from './Magnet';
 const StickyStackedCards = () => {
   const cards = [
     {
-      tag: "Full Stack",
+      tag: "Ecommerce",
       title: "THE ARVAN",
       description:
         "A Modern And Elegant Website For Arvan, Showcasing High-End Fashion With A Minimal, Responsive Design That Highlights Products And Brand Identity.",
@@ -12,7 +12,7 @@ const StickyStackedCards = () => {
       link: "https://www.thearvan.com", // Add the link here
     },
     {
-      tag: "Full Stack",
+      tag: "Ecommerce",
       title: "Raas Creation",
       description:
         "Raas Creation is an ethnic fashion brand website with a powerful admin panel and minimal UI design crafted by WebDrave.",
