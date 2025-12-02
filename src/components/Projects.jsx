@@ -51,6 +51,14 @@ const StickyStackedCards = () => {
       image: "img/tran.png",
       link: "https://www.tranquilitylux.com",
     },
+    {
+      tag: "Coming Soon",
+      title: "Deuce",
+      description: "An exciting new project that's currently in development. Stay tuned for updates!",
+      image: "img/Deuce.png",
+      comingSoon: true,
+      link: "#"
+    },
   ];
 
   return (
@@ -81,12 +89,22 @@ const StickyStackedCards = () => {
         {cards.map((card, i) => (
           <div
             key={i}
-            className={`sticky top-[8vw] z-[${i + 1}] backdrop-blur-md bg-purple/5 border border-purple rounded-2xl p-6 md:p-10 flex flex-col md:flex-row gap-10 shadow-2xl`}
+            className={`sticky top-[8vw] z-[${i + 1}] backdrop-blur-md bg-purple/5 border border-purple rounded-2xl p-6 md:p-10 flex flex-col md:flex-row gap-10 shadow-2xl ${card.comingSoon ? 'relative' : ''}`}
             style={{
               minHeight: "480px",
               marginTop: i === 0 ? 0 : "8vh",
+              filter: card.comingSoon ? 'blur(0px)' : 'none',
+              opacity: card.comingSoon ? 0.7 : 1,
             }}
           >
+            {card.comingSoon && (
+              <div className="absolute inset-0 bg-black/70 z-10 rounded-2xl flex items-center justify-center">
+                <div className="text-center p-8">
+                  <span className="text-4xl md:text-6xl font-spacebold text-white mb-4 block">Coming Soon</span>
+                  <p className="text-white/80 text-lg">We're working on something amazing!</p>
+                </div>
+              </div>
+            )}
             {/* Left Side - Text */}
             <div className="flex-1 flex flex-col justify-center space-y-5 text-white">
               <span className="inline-block border border-white/30 px-8 py-4 text-sm font-spacelight rounded-md w-fit text-[4vw] md:text-sm">
