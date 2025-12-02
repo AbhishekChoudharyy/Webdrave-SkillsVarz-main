@@ -9,7 +9,7 @@ const StickyStackedCards = () => {
       description:
         "A Modern And Elegant Website For Arvan, Showcasing High-End Fashion With A Minimal, Responsive Design That Highlights Products And Brand Identity.",
       image: "img/arvan.png",
-      link: "https://www.thearvan.com", // Add the link here
+      link: "https://www.thearvan.com",
     },
     {
       tag: "Ecommerce",
@@ -42,6 +42,14 @@ const StickyStackedCards = () => {
         "A travel agency curating personalized domestic and international trips designed for comfort, culture, and memorable experiences.",
       image: "img/ae.png",
       link: "hhttps://www.anayaescapes.com/", // Add the link here
+    },
+    {
+      tag: "Ecommerce & Wellness",
+      title: "Tranquility Lux",
+      description:
+        "An elegant e-commerce platform for wellness products, featuring a modern design that emphasizes tranquility and luxury. The site offers a seamless shopping experience with a focus on eco-friendly and sustainable products.",
+      image: "img/tran.png",
+      link: "https://www.tranquilitylux.com",
     },
   ];
 
